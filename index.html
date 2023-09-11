@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Sunnyside Agency</title>
@@ -11,65 +14,81 @@
 <body>
   <header class="l-header">
     <nav class="l-nav">
-      <img src="images/logo.svg" alt="Brand">
+      <img src="images/logo.svg" alt="Brand" class="c-logo">
       <div class="l-links">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <ul>
+          <li><a href="#" class="c-link">About</a></li>
+          <li><a href="#"class="c-link">Services</a></li>
+          <li><a href="#" class="c-link">Projects</a></li>
+          <li><a href="#" class="c-link">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
     <div class="l-heading__wrappper">
       <h1 class="c-h1">We are creatives</h1>
+      <img src="images/icon-arrow-down.svg" alt="Decorative" class="c-arrow_down">
     </div>
+    
   </header>
 
-  <section class="l-section">
-    <div class="l-texts__wrapper">
-      <h2 class="c-h2">
-        Transform your brand
-      </h2>
-      <p class="c-paragraph">
-        We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-      </p>
-      <a href="#" class="c-learn__more">Learn more</a>
+  <section class="l-grid__section">
+    <div class="l-grid__text">
+      <div class="l-texts__wrapper">
+        <h2 class="c-h2">
+          Transform your brand
+        </h2>
+        <p class="c-paragraph">
+          We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        
+          <div class="l-hover__yelow">
+            <a href="#" class="c-learn__more-yellow">Learn more</a>
+          </div>
+      </div>
     </div>
 
     <div class="l-image__wrapper">
-      <img src="" alt="">
+      <img src="images/desktop/image-transform.jpg" alt="Egg" class="egg-image">
     </div>
 
     <div class="l-image__wrapper">
-      <img src="" alt="">
+      <img src="images/desktop/image-stand-out.jpg" alt="Pink glass" class="glass__pink">
     </div>
-    <div class="l-texts__wrapper">
-      <h2 class="c-h2">
-        Stand out to the right audience
-      </h2>
-      <p class="c-paragraph">
-        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-      </p>
-      <a href="#" class="c-learn__more">Learn more</a>
-    </div>
-
-    <div class="l-image__text__wrapper">
-      <h2 class="c-h2">
-        Graphic design
-      </h2>
-      <p class="c-paragraph">
-        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-      </p>
+    <div class="l-grid__text">
+      <div class="l-texts__wrapper">
+        <h2 class="c-h2">
+          Stand out to the right audience
+        </h2>
+        <p class="c-paragraph">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
+        </p>
+        <div class="l-hover__pink">
+          <a href="#" class="c-learn__more-pink">Learn more</a></div>
+      </div>
     </div>
 
-    <div class="l-image__text__wrapper">
-      <h2 class="c-h2">
-        Photography
-      </h2>
-      <p class="c-paragraph">
-        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-      </p>
+    <div class="l-image__text__wrapper__cherry">
+      <div class="l-texts__wrapper__bg">
+        <h2 class="c-h2__bg">
+          Graphic design
+        </h2>
+        <p class="c-paragraph__bg">
+          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
+        </p>
+      </div>
+    </div>
+
+    <div class="l-image__text__wrapper__orange">
+      <div class="l-texts__wrapper__bg">
+        <h2 class="c-h2__bg">
+          Photography
+        </h2>
+        <p class="c-paragraph__bg">
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
+      </div>
     </div>
   </section>
 
