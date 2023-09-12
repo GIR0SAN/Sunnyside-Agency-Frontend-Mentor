@@ -14,7 +14,7 @@
 <body>
   <header class="l-header">
     <nav class="l-nav">
-      <img src="images/logo.svg" alt="Brand" class="c-logo">
+      <a href="#" class="c-logo__link"><img src="images/logo.svg" alt="Brand" class="c-logo"></a>
       <div class="l-links">
         <ul>
           <li><a href="#" class="c-link">About</a></li>
@@ -99,7 +99,7 @@
       </h3>
       <div class="l-clients__profile__wrapper">
         <div class="l-clients__wrapper">
-          <img src="" alt="">
+          <img src="images/image-emily.jpg" alt="Emily Photo" class="c-prolife__image">
           <p class="c-client__text">
             We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
           </p>
@@ -108,7 +108,7 @@
         </div>
 
         <div class="l-clients__wrapper">
-          <img src="" alt="">
+          <img src="images/image-thomas.jpg" alt="Thomas Photo" class="c-prolife__image">
           <p class="c-client__text">
             Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.
           </p>
@@ -117,7 +117,7 @@
         </div>
 
         <div class="l-clients__wrapper">
-          <img src="" alt="">
+          <img src="images/image-jennie.jpg" alt="Jhenny Photo" class="c-prolife__image">
           <p class="c-client__text">
             Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
           </p>
@@ -129,22 +129,31 @@
   </section>
 
   <section class="l-images__grid">
-    <div class="c-images__grid"></div>
-    <div class="c-images__grid"></div>
-    <div class="c-images__grid"></div>
-    <div class="c-images__grid"></div>
+   <img src="images/desktop/image-gallery-milkbottles.jpg" alt="decorative" class="c-grid__image">
+   <img src="images/desktop/image-gallery-orange.jpg" alt="decorative" class="c-grid__image">
+   <img src="images/desktop/image-gallery-cone.jpg" alt="decorative" class="c-grid__image">
+   <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Decorative" class="c-grid__image">
   </section>
 
   <footer class="l-footer">
     <img src="images/logo.svg" alt="" class="c-black__logo">
 
     <div class="l-footer__links__wrapper">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Projects</a>
+      <a href="#" class="c-social__links">About</a>
+      <a href="#" class="c-social__links">Services</a>
+      <a href="#" class="c-social__links">Projects</a>
     </div>
+
+    <ul class="l-social__logos">
+     <li><a href="#" class="c-social__link"><ion-icon name="logo-facebook" class="c-social__logo"></ion-icon></a></li>
+     <li><a href="#" class="c-social__link"><ion-icon name="logo-instagram" class="c-social__logo"></ion-icon></a></li>
+     <li><a href="#" class="c-social__link"><ion-icon name="logo-twitter" class="c-social__logo"></ion-icon></a></li>
+     <li><a href="#" class="c-social__link"><ion-icon name="logo-pinterest" class="c-social__logo"></ion-icon></a></li>
+    </ul>
   </footer>
 
   <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
