@@ -13,11 +13,13 @@
 </head>
 <body>
   <header class="l-header">
-    <nav class="l-nav">
-      <a href="#" class="c-logo__link"><img src="images/logo.svg" alt="Brand" class="c-logo"></a>
-      <button id="button"><img src="images/icon-hamburger.svg" alt=""></button>
+    <nav class="l-nav" id="nav">
+      <div class="l-logo__button">
+        <a href="#" class="c-logo__link"><img src="images/logo.svg" alt="Brand" class="c-logo"></a>
+        <button id="btn-mobile"><img src="images/icon-hamburger.svg" alt=""></button>
+      </div>
       <div class="l-links">
-        <ul>
+        <ul id="menu">
           <li><a href="#" class="c-link">About</a></li>
           <li><a href="#"class="c-link">Services</a></li>
           <li><a href="#" class="c-link">Projects</a></li>
@@ -34,63 +36,62 @@
   </header>
 
   <section class="l-grid__section">
-    <div class="l-grid__text">
-      <div class="l-texts__wrapper">
-        <h2 class="c-h2">
-          Transform your brand
-        </h2>
-        <p class="c-paragraph">
-          We are a full-service creative agency specializing in helping brands grow fast. 
-          Engage your clients through compelling visuals that do most of the marketing for you.
-        </p>
-        
-          <div class="l-hover__yelow">
-            <a href="#" class="c-learn__more-yellow">Learn more</a>
-          </div>
-      </div>
-    </div>
 
-    <div class="l-image__wrapper">
-      <img src="images/desktop/image-transform.jpg" alt="Egg" class="egg-image">
-    </div>
-
-    <div class="l-image__wrapper">
-      <img src="images/desktop/image-stand-out.jpg" alt="Pink glass" class="glass__pink">
-    </div>
-    <div class="l-grid__text">
-      <div class="l-texts__wrapper">
-        <h2 class="c-h2">
-          Stand out to the right audience
-        </h2>
-        <p class="c-paragraph">
-          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
-        </p>
-        <div class="l-hover__pink">
-          <a href="#" class="c-learn__more-pink">Learn more</a></div>
+      <div class="l-grid__text">
+        <div class="l-texts__wrapper">
+          <h2 class="c-h2">
+            Transform your brand
+          </h2>
+          <p class="c-paragraph">
+            We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+      
+            <div class="l-hover__yelow">
+              <a href="#" class="c-learn__more-yellow">Learn more</a>
+            </div>
+        </div>
       </div>
-    </div>
-
-    <div class="l-image__text__wrapper__cherry">
-      <div class="l-texts__wrapper__bg">
-        <h2 class="c-h2__bg">
-          Graphic design
-        </h2>
-        <p class="c-paragraph__bg">
-          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
-        </p>
+      <div class="l-image__wrapper">
+        <img src="images/desktop/image-transform.jpg" alt="Egg" class="egg-image">
       </div>
-    </div>
 
-    <div class="l-image__text__wrapper__orange">
-      <div class="l-texts__wrapper__bg">
-        <h2 class="c-h2__bg">
-          Photography
-        </h2>
-        <p class="c-paragraph__bg">
-          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-        </p>
+      <div class="l-image__wrapper">
+        <img src="images/desktop/image-stand-out.jpg" alt="Pink glass" class="glass__pink">
       </div>
-    </div>
+      <div class="l-grid__text">
+        <div class="l-texts__wrapper">
+          <h2 class="c-h2">
+            Stand out to the right audience
+          </h2>
+          <p class="c-paragraph">
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
+          </p>
+          <div class="l-hover__pink">
+            <a href="#" class="c-learn__more-pink">Learn more</a></div>
+        </div>
+      </div>
+
+      <div class="l-image__text__wrapper__cherry">
+        <div class="l-texts__wrapper__bg">
+          <h2 class="c-h2__bg">
+            Graphic design
+          </h2>
+          <p class="c-paragraph__bg">
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
+          </p>
+        </div>
+      </div>
+      <div class="l-image__text__wrapper__orange">
+        <div class="l-texts__wrapper__bg">
+          <h2 class="c-h2__bg">
+            Photography
+          </h2>
+          <p class="c-paragraph__bg">
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
+      </div>
   </section>
 
   <section class="l-testimonial">
@@ -130,10 +131,17 @@
   </section>
 
   <section class="l-images__grid">
-   <img src="images/desktop/image-gallery-milkbottles.jpg" alt="decorative" class="c-grid__image">
-   <img src="images/desktop/image-gallery-orange.jpg" alt="decorative" class="c-grid__image">
-   <img src="images/desktop/image-gallery-cone.jpg" alt="decorative" class="c-grid__image">
-   <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Decorative" class="c-grid__image">
+   <picture>
+    <source media="(max-width:375px )" srcset="images/mobile/image-gallery-milkbottles.jpg" type="image/png">
+    <img src="images/desktop/image-gallery-milkbottles.jpg" alt="decorative" class="c-grid__image"></picture>
+   <picture>
+    <source media="(max-width:375px )" srcset="images/mobile/image-gallery-orange.jpg" type="image/png">
+    <img src="images/desktop/image-gallery-orange.jpg" alt="decorative" class="c-grid__image"></picture>
+   <picture>
+    <source media="(max-width:375px )" srcset="images/mobile/image-gallery-cone.jpg" type="image/png">
+    <img src="images/desktop/image-gallery-cone.jpg" alt="decorative" class="c-grid__image"></picture>
+   <picture>
+    <source media="(max-width:375px )" srcset="images/mobile/image-gallery-sugar-cubes.jpg" type="image/png"><img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Decorative" class="c-grid__image"></picture>
   </section>
 
   <footer class="l-footer">

@@ -41,7 +41,7 @@ body{
   width: auto;
   height: 120px;
 }
-#button{
+#btn-mobile{
   display: none;
 }
 ul{
@@ -78,9 +78,13 @@ li{
 }
 .l-grid__section{
   display: grid;
-  grid-template-columns: 50% 50%;
-  border: none;
+  grid-template-columns:50% 50%;
+  grid-template-rows: auto;
 }
+.c-grid__wrapper{
+  display: flex;
+  width: 100%;
+} 
 .l-grid__text{
   width: 100%;
   display: flex;
@@ -121,7 +125,6 @@ li{
 }
 .egg-image, .glass__pink{
   width: 100%;
-  height: auto;
 }
 .l-image__text__wrapper__cherry{
   width: 100%;
@@ -255,13 +258,44 @@ li{
 }
 
 @media screen and (max-width:375px){
-  .l-links{
+  .l-nav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #menu{
+    background-color: var(--White);
     display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 32px;
+    margin: 0 16px;
+    width: 90%;
+    left: 0%;
+    text-align: center;
+  }
+  li{
+    margin: 12px 0;
+  }
+  .c-link{
+    color: var(--Dark-desaturated-cyan);
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+  .c-link:hover{
+    background-color: var(--Yellow);
+    color: var(--White)
+  }
+  #nav.active #menu{
+    display: flex;
+  }
+  .l-logo__button{
+    display: flex;
   }
   .c-logo{
     height: 115px;
   }
-  #button{
+  #btn-mobile{
     display: block;
     background-color:transparent ;
     border: none;
@@ -272,6 +306,65 @@ li{
   }
   .l-header{
     height: 550px;
-
+  }
+  .c-grid__flexbox{
+    flex-direction: column-reverse;
+  }
+  .c-grid__flexbox__two{
+    display: flex;
+    flex-direction: column;
+  }
+  .l-grid__section{
+    grid-template-columns: 100%;
+    grid-template-rows: 4;
+  }
+  .l-grid__text{
+    padding: 70px 30px;
+  }
+  .egg-image{
+    grid-row: 3;
+  }
+  .l-texts__wrapper__bg{
+    width: 320px;
+    height: 100%;
+    padding-bottom: 25pxpx;
+  }
+  .l-image__text__wrapper__cherry{
+    width: 100%;
+    height: 500px;
+    background-image: url(images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+  }
+  .l-image__text__wrapper__orange{
+    width: 100%;
+    height: 500px;
+    background-image: url(images/mobile/image-photography.jpg);
+  }
+  .l-testimonial{
+    padding: 30px;
+  }
+  .c-h3{
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .l-clients__profile__wrapper{
+    flex-direction: column;
+  }
+  .l-images__grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 24px;
+  }
+  .c-grid__image{
+    height: 190px;
+  }
+  .l-footer__links__wrapper{
+    margin-bottom: 40px;
+  }
+  .c-social__links{
+    margin: 10px;
+  }
+  .c-social__logo{
+    margin: 8px;
   }
 }
